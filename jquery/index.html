@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>School of Computer Engineering &amp; Technology</h1>
+    <h2>Third Year B.Tech CSE (Semester VI)</h2>
+    <h3>Course: Web Technologies</h3>
+  </header>
+
+  <main>
+    <nav class="tabs" aria-label="Page tabs">
+      <button type="button" id="tabFormBtn" class="tab-btn active" aria-controls="tabFormPanel" aria-selected="true">
+        Registration Form
+      </button>
+      <button type="button" id="tabDomBtn" class="tab-btn" aria-controls="tabDomPanel" aria-selected="false">
+        DOM + jQuery Demo
+      </button>
+    </nav>
+
+    <section id="tabFormPanel" class="tab-panel active">
+      <section class="form-section">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm" novalidate>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <span class="error" id="usernameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span class="error" id="passwordError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <span class="error" id="confirmPasswordError"></span>
+          </div>
+
+          <button type="submit" id="submitBtn">Register</button>
+        </form>
+
+        <button type="button" id="showFormDataBtn">Show Form Data (jQuery)</button>
+      </section>
+    </section>
+
+    <section id="tabDomPanel" class="tab-panel">
+      <section class="dom-section">
+        <h2 id="domTitle">DOM Manipulation Demo</h2>
+        <p class="info">This is some original information text.</p>
+
+        <img
+          id="demoImage"
+          src="images/1.jpg"
+          alt="Demo image"
+        >
+
+        <div class="dom-buttons">
+          <button id="changeTextBtn">Change Text (DOM)</button>
+          <button id="moveTitleBtn">Move Title (DOM)</button>
+          <button id="changeImageBtn">Change Image (DOM)</button>
+          <button id="addNodeBtn">Add Text Node (DOM)</button>
+          <button id="deleteNodeBtn">Delete Last Node (DOM)</button>
+        </div>
+
+        <div id="notesContainer" class="notes-container">
+          <!-- New text nodes will be added here -->
+        </div>
+      </section>
+
+      <section class="jquery-section">
+        <h2>jQuery Demo</h2>
+        <button id="jqButton">Original jQuery Button</button>
+      </section>
+    </section>
+  </main>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

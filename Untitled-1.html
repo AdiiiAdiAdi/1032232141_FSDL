@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aditya Muddana | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #111 0%, #000 70%);
+  color: #eaeaea;
+}
+
+a { text-decoration: none; color: inherit; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+nav h1 {
+  color: #ff2d2d;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 80px;
+  max-width: 1200px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,45,45,0.15);
+  color: #ff2d2d;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #000;
+}
+
+section {
+  padding: 80px;
+}
+
+section h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  height: 340px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #222, #000);
+  border: 1px solid #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ff2d2d;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.card span {
+  font-size: 12px;
+  color: #ff2d2d;
+  margin-bottom: 6px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card small {
+  color: #999;
+}
+
+.coming-soon {
+  height: 340px;
+  border-radius: 18px;
+  background: repeating-linear-gradient(
+    45deg,
+    #111,
+    #111 10px,
+    #0c0c0c 10px,
+    #0c0c0c 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 600;
+  border: 1px solid #1f1f1f;
+}
+
+.hidden { display: none; }
+
+/* PROJECT DETAIL */
+.project-detail {
+  max-width: 900px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aditya Muddana | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #111 0%, #000 70%);
+  color: #eaeaea;
+}
+
+a { text-decoration: none; color: inherit; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+nav h1 {
+  color: #ff2d2d;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 80px;
+  max-width: 1200px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,45,45,0.15);
+  color: #ff2d2d;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.hero h2 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 600px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 26px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #000;
+}
+
+section {
+  padding: 80px;
+}
+
+section h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  height: 340px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #222, #000);
+  border: 1px solid #1e1e1e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #ff2d2d;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.card span {
+  font-size: 12px;
+  color: #ff2d2d;
+  margin-bottom: 6px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card small {
+  color: #999;
+}
+
+.coming-soon {
+  height: 340px;
+  border-radius: 18px;
+  background: repeating-linear-gradient(
+    45deg,
+    #111,
+    #111 10px,
+    #0c0c0c 10px,
+    #0c0c0c 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-weight: 600;
+  border: 1px solid #1f1f1f;
+}
+
+.hidden { display: none; }
+
+/* PROJECT DETAIL */
+.project-detail {
+  max-width: 900px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.project-detail h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.project-detail h4 {
+  margin-top: 30px;
+  color: #ff2d2d;
+}
+
+.project-detail ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.back-btn {
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: #ff2d2d;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  nav, .hero, section { padding: 40px; }
+  .hero h2 { font-size: 46px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>ADITYA MUDDANA</h1>
+  <ul>
+    <li>Projects</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="tag">B.Tech CSE Student</div>
+  <h2>ADITYA<br>MUDDANA</h2>
+  <p>
+    21 Years Old • Computer Science & Engineering <br>
+    Building digital experiences one project at a time. Passionate about
+    innovative, data-driven solutions.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="btn primary" onclick="scrollToProjects()">View Projects</button>
+    <button class="btn">More Info</button>
+  </div>
+</div>
+
+<section id="projects">
+  <h3>My Projects</h3>
+
+  <!-- CARDS -->
+  <div id="projectCards" class="projects">
+    <div class="card" onclick="openProject('alpha')">
+      <div class="badge">NEW</div>
+      <span>Digital Twin / GIS</span>
+      <h4>VayuVision</h4>
+      <small>Urban CO₂ Monitoring</small>
+    </div>
+
+    <div class="card" onclick="openProject('beta')">
+      <div class="badge">NEW</div>
+      <span>Web Platform</span>
+      <h4>Sahaay</h4>
+      <small>Civic Issue Reporting</small>
+    </div>
+
+    <div class="card" onclick="window.location.href='jquery/index.html'">
+      <span>jQuery</span>
+      <h4>Jquery Demo</h4>
+      <small>Interactive Web Components</small>
+    </div>
+
+    <div class="coming-soon">🚧 Coming Soon</div>
+  </div>
+
+  <!-- PROJECT ALPHA -->
+  <div id="alpha" class="project-detail hidden">
+    <div class="back-btn" onclick="goBack()">← Back to Projects</div>
+
+    <h2>CO₂ Capture Digital Twin for Urban Emissions Monitoring and Planning</h2>
+
+    <p>
+      This project implements a <b>CO₂ Capture Digital Twin</b> for an urban
+      environment (Pune) enabling real-time visualization, analysis, and
+      scenario-based planning of carbon emissions.
+    </p>
+
+    <p>
+      Built using <b>Streamlit</b> and <b>Leaflet/Folium</b>, the system integrates
+      multi-source emissions including vehicular traffic, industry, energy, and
+      waste management.
+    </p>
+
+    <h4>Core Features</h4>
+    <ul>
+      <li>Spatial point layers and aggregated heatmaps</li>
+      <li>Grid-based CO₂ intensity visualization</li>
+      <li>Real-time heatmap parameter tuning</li>
+      <li>Layer toggles for emission sources</li>
+      <li>Simulation-ready intervention framework</li>
+    </ul>
+
+    <p>
+      The architecture cleanly separates data processing (Python), visualization
+      (Streamlit), and map rendering (Leaflet), making it scalable and
+      production-ready.
+    </p>
+  </div>
+
+  <!-- PROJECT BETA -->
+  <div id="beta" class="project-detail hidden">
+    <div class="back-btn" onclick="goBack()">← Back to Projects</div>
+
+    <h2>🏙️ Sahaay – Crowdsourced Civic Issue Reporting Platform</h2>
+
+    <p>
+      Sahaay is a web-based platform enabling citizens to report civic issues
+      such as potholes, broken streetlights, and waste problems while allowing
+      municipal authorities to manage and resolve them efficiently.
+
+    </p>
+
+    <h4>Key Features</h4>
+    <ul>
+      <li>📍 Geo-tagged issue reports</li>
+      <li>📸 Photo uploads</li>
+      <li>📝 Descriptive issue notes</li>
+      <li>📊 Interactive admin dashboard</li>
+      <li>🔔 Real-time status updates</li>
+      <li>🗂️ Department-based routing</li>
+    </ul>
+
+    <h4>Tech Stack</h4>
+    <ul>
+      <li>Backend: PHP</li>
+      <li>Database: Amazon RDS (MySQL / PostgreSQL)</li>
+      <li>Hosting: AWS EC2</li>
+      <li>Storage: Amazon S3 (planned)</li>
+      <li>Monitoring: Amazon CloudWatch</li>
+      <li>Frontend: HTML / CSS / JS</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2026 Aditya Muddana. All rights reserved.
+</footer>
+
+<script>
+function openProject(id) {
+  document.getElementById('projectCards').classList.add('hidden');
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function goBack() {
+  document.getElementById('projectCards').classList.remove('hidden');
+  document.getElementById('alpha').classList.add('hidden');
+  document.getElementById('beta').classList.add('hidden');
+}
+
+function scrollToProjects() {
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
